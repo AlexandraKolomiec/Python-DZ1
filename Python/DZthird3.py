@@ -14,9 +14,8 @@ max_pack = {}
 
 for key, value in backpack.items():
     while weight < max_weight:
-        weight += value
+        weight = value + 1
         max_pack[key] = value
-print(weight)
 print(max_pack)
+print(weight)
 
-#НЕ РАЗОБРАЛАСЬ

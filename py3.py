@@ -1,13 +1,13 @@
 ## 1 Вручную создайте список с целыми числами, которые повторяются.
 ## Получите новый список, который содержит уникальные (без повтора) элементы исходного списка
 
-list1 = [1, 2, 3, 5, 2, 2, 1, 13, 4, 2]
-list2 = []
+# list1 = [1, 2, 3, 5, 2, 2, 1, 13, 4, 2]
+# list2 = []
 
-for item in list1:
-    if item not in list2:
-        list2.append(item)
-print(list2)
+# for item in list1:
+#     if item not in list2:
+#         list2.append(item)
+# print(list2)
 
 # #короткий способ множества-уник эл-ты {}-> list(SET) ->[]
 # list3 = list(set(list1))
@@ -70,13 +70,13 @@ print(list2)
 # ✔ Слова выводятся отсортированными согласно кодировки Unicode.
 # ✔ Текст выравнивается по правому краю так, чтобы у самого длинного слова был один пробел между ним и номером строки
 
-# str1 = input().split()
-# str1.sort()
-# temp = 0 #переменная для макс длины слова
-# for item in str1:# находим самое длинное слово
-#     if len(item) > temp:
-#         temp = len(item)
+str1 = input().split()
+str1.sort()
+temp = 0 #переменная для макс длины слова
+for item in str1:# находим самое длинное слово
+    if len(item) > temp:
+        temp = len(item)
 
-# for i, k in enumerate(str1, start =1):
-#     print(f'{i} {k:>{temp}}') #пробел между } {
+for i, k in enumerate(str1, start =1):
+    print(f'{i} {k:>{temp}}') #пробел между } {
 
