@@ -3,7 +3,8 @@
     "88": "Fil"
   },
   "1": {
-    "21": "Sam"
+    "21": "Sam",
+    "888": "Cat"
   },
   "4": {
     "11": "Fab",
@@ -12,5 +13,11 @@
   "2": {
     "44": "get",
     "58": "Gary"
+  },
+  "5": {
+    "2": "& C:/Users/alexa/AppData/Local/Programs/Python/Python311/python.exe \"c:/Users/alexa/OneDrive/Рабочий стол/Python/Python/DZtenth2.py\""
+  },
+  "7": {
+    "9": "Sasha"
   }
 }
