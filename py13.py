@@ -74,7 +74,7 @@
 #             users.add(User(name = name,id= int(id),level= int(level)))
 #     return users
       
-# print(reed_json('ident.json'))
+# print(reed_json('indent.json'))
 
 """ Доработаем задачи 3 и 4. Создайте класс проекта, который имеет следующие методы:
 📌 загрузка данных (функция из задания 4)
@@ -122,11 +122,4 @@ class Project:
                 self.user = item
                 return self.user
 
-#     def add_user(self, name: str, id: int, level: int):
-
-#         if level < self.user:
-#             raise LevelException
-        
-
-# u2 = Project()
-# u2.enter("Fil", 88 )
+    #def add_user(self, name: str, id: int, level: int):

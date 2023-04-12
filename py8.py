@@ -27,38 +27,32 @@ import json
 При перезапуске функции уже записанные в файл данные должны сохраняться. 
 """
 
-def ident(name_file: str):
-    dic ={}
-    second = {}
-    with open(name_file, 'r', encoding='utf-8') as f:#чтение файла
-        data = json.load(f)#запись данных в файл
-    dic = data#сохранение
-    print(type(dic))
-    print(dic)
+def user_access(name_file: str):
+    dict_lev = {}
+    dict_user = {}
+    with open(name_file, 'r', encoding='utf-8') as f:
+        data_file = json.load(f)
+        dict_lev = data_file
     while True:
-        name = input("введите имя ")
-        if name == '':#выход из цикла
+        name = input('Enter name: ')
+        if name == '':
             break
-        id = int(input("введите личный идентификатор "))
-        lev = input('введите уровень доступа (от 1 до 7) ')#строковое значение- ключ!
-        second = {id:name}#словарь в словаре с идент lev
-        
-        if dic.get(lev) is None:#проверка на уникальность ключа
-            dic[lev] = second
+        id_user = int(input('Enter id: '))
+        lev = input('Enter your level (1 - 7): ')
+        dict_user[id_user] = name
+
+        if dict_lev.get(lev) is None:
+            dict_lev[lev] = dict_user
         else:
-            k = dic.get(lev) 
-            k.update(second)      
-    print(dic) 
+            key_lev = dict_lev.get(lev)
+            key_lev.update(dict_user)
+
+    print(dict_lev,dict_user)
     with open(name_file, 'w', encoding='utf-8') as f:
-        
-        json.dump(dic, f, ensure_ascii=False, indent=2)
-    
-   
-ident('ident.json')        
+        json.dump(dict_lev, f, ensure_ascii=False, indent=2)
 
-  
- 
 
-    
-        
-    
+
+
+if __name__ == '__main__':
+    user_access('indent.json')
