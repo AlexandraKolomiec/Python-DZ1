@@ -4,28 +4,28 @@
 Текст выравнивается по правому краю так, чтобы у самого длинного слова был один пробел между ним и номером строки.
 """
 
-def read_str(a: str)-> None:
-    str_2 = sorted(a.split())
-    max_len = len(max(str_2, key=len))#получ кол-во символов len()
+# def read_str(a: str)-> None:
+#     str_2 = sorted(a.split())
+#     max_len = len(max(str_2, key=len))#получ кол-во символов len()
     
-    for i, k in enumerate(str_2, start=1):
-        print(f'{i} {k:>{max_len}}')
+#     for i, k in enumerate(str_2, start=1):
+#         print(f'{i} {k:>{max_len}}')
 
-read_str('1234561 aaa bbb cabnnj')
+# read_str('1234561 aaa bbb cabnnj')
 
 """Напишите функцию, которая принимает строку текста. 
 Сформируйте список с уникальными кодами Unicode каждого символа введённой строки отсортированный по убыванию.
  """
 
-# def func(text:str) -> list[int]:
-#     result = set()
+def func(text:str) -> list[int]:
+    result = set()
 
-#     for item in text:
-#       result.add(ord(item))
-#     result = sorted(result, reverse=True)
-#     return result
+    for item in text:
+      result.add(ord(item))
+    result = sorted(result, reverse=True)
+    return result
 
-# print(func('Напишите функцию, которая принимает строку текста '))
+print(func('Напишите функцию, которая принимает строку текста '))
 
 """ Функция получает на вход строку из двух чисел через пробел. 
 Сформируйте словарь, где ключом будет символ из Unicode, а значением - целое число. 
