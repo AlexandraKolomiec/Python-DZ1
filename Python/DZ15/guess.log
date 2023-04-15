@@ -1,0 +1,14 @@
+INFO:__main__:lower limit 1,  upper limit 10, number of attempts 3
+INFO:__main__:hidden number is: 1
+INFO:__main__:entered number: 5
+INFO:__main__:entered number: 4
+INFO:__main__:entered number: 2
+INFO:__main__:the chances are over
+INFO:__main__:lower limit 0,  upper limit 9, number of attempts 8
+INFO:__main__:hidden number is: 9
+INFO:__main__:entered number: 1
+INFO:__main__:entered number: 3
+INFO:__main__:entered number: 5
+INFO:__main__:entered number: 7
+INFO:__main__:entered number: 8
+INFO:__main__:number guessed!
